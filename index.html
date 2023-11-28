@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
+  </head>
+  <header class="fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo01">
+
+
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="index.html">Inicio</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+</header>
+  <body class="fondo">
+
+
+
+    <br><br><br>
+    <h1 class="text-center colortexto titulo">Encuentra el auto deseado! </h1>
+    <br>
+
+    <div class="contenedor">
+      <div class="caja">
+        <img class="images" id="img1" src="img/carro1.jpg" alt="">
+        <br>
+        <h3 class="colortexto">Autos Clásicos</h3>
+        <p class="colortexto">Con carácter general, se considera un automóvil clásico a aquel que tiene al menos 25 años de antigüedad. Desde el punto de vista legal, muchos países disponen de figuras administrativas que permiten declarar un vehículo como automóvil clásico a partir de un determinado número de años desde su primera matriculación, lo que implica un tratamiento fiscal especial y algunas particularidades de carácter técnico. El mínimo de años puede variar de unos países a otros, pero en Europa lo más habitual es que se exijan 30 años.1​</p>
+      </div>
+      <div class="caja">
+        <img class="images"id="img2"  src="img/carro4.jpg" alt="">
+        <br>
+        <h3 class="colortexto">Autos Deportivos</h3>
+        <p class="colortexto">Un automóvil deportivo es un automóvil de turismo diseñado para poder circular a altas velocidades. Al contrario que un automóvil de carreras, está pensado para ser conducido en la vía pública. Tienen mejor aceleración, velocidad máxima, adherencia al asfalto, mejor sistema de frenado y una mayor potencia que otros coches convencionales, lo que se logra mediante motores, frenos, suspensión, caja de cambios, neumáticos, chasis y tipo de carrocería especiales. Las carrocerías asociadas a un deportivo son principalmente cupé y descapotable.</p>
+      </div>
+      <div class="caja">
+        <img class="images" id="img3"  src="img/carro3.jpg" alt="">
+        <br>
+        <h3 class="colortexto">Autos Sedán</h3>
+        <p class="colortexto">Los sedanes son los modelos de autos más comunes que hay. Se caracterizan por tener un chasis monocasco con tres espacios claramente separados: la cajuela, la cabina y el cofre para el motor. Es a lo que regularmente nos referimos como coche.
+
+
+Es muy importante no confundir los sedanes con los coupés. Estos últimos, aunque en apariencia tienen las características antes mencionadas, son bastante distintos: suelen ser más cortos, tener menos espacio y un diseño más aerodinámico y deportivo.</p>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oKl6hC1SIq+bpoLwAdNKOpHvfeZLZ5RqU8+7If5stAM=" crossorigin="anonymous"></script>
+
+    <script>
+      var img1 = document.getElementById('img1');
+      var img2 = document.getElementById('img2');
+      var img3 = document.getElementById('img3');
+
+      img1.addEventListener('mouseover', function() {
+        this.style.transform = 'scale(1.1)';
+      });
+
+      img2.addEventListener('mouseover', function() {
+        this.style.transform = 'scale(1.1)';
+      });
+
+      img3.addEventListener('mouseover', function() {
+        this.style.transform = 'scale(1.1)';
+      });
+
+      img1.addEventListener('mouseout', function() {
+        this.style.transform = 'scale(1)';
+      });
+
+      img2.addEventListener('mouseout', function() {
+        this.style.transform = 'scale(1)';
+      });
+
+      img3.addEventListener('mouseout', function() {
+        this.style.transform = 'scale(1)';
+      });
+    </script>
+
+</body>
+
+
+</html>
