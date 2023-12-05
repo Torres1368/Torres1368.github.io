@@ -40,10 +40,18 @@
         const database =getDatabase(app);
 
         window.crearRegistro = function(){
-          const nombre = document.getElementById(nombre).value;
-          const edad = document.getElementById(edad).value;
+          const nombre = document.getElementById("nombre").value;
+          const edad = document.getElementById("edad").value;
 
           console.log(nombre , edad);
+
+          push(
+            ref(database, 'septimo'),
+            {
+              name: nombre,
+              edad: edad
+            }
+          )
         }
 
       </script>
